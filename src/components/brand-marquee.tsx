@@ -15,27 +15,32 @@ const brands = [
  * loops seamlessly. Pauses on hover/focus for accessibility & legibility.
  */
 export function BrandMarquee() {
-  const track = [...brands, ...brands];
-
   return (
     <div
-      className="w-full overflow-hidden border-y border-line bg-cream py-10"
+      className="w-full overflow-hidden border-y border-line bg-cream py-10 flex"
       role="region"
       aria-label="Brand partners"
     >
-      <div className="flex w-max animate-marquee items-center gap-16 px-8">
-        {track.map((brand, i) => (
+      <div className="flex w-max animate-marquee items-center">
+        {[...Array(4)].map((_, idx) => (
           <div
-            key={`${brand.slug}-${i}`}
-            className="flex h-10 shrink-0 items-center opacity-70 grayscale transition-opacity hover:opacity-100 hover:grayscale-0"
+            key={idx}
+            className="flex shrink-0 items-center justify-around gap-16 px-8"
           >
-            <Image
-              src={`/logos/${brand.slug}.png`}
-              alt={brand.name}
-              width={160}
-              height={55}
-              className={`w-auto object-contain ${brand.customClass || "h-8"}`}
-            />
+            {brands.map((brand, i) => (
+              <div
+                key={`${brand.slug}-${i}`}
+                className="flex h-10 shrink-0 items-center opacity-70 grayscale transition-opacity hover:opacity-100 hover:grayscale-0"
+              >
+                <Image
+                  src={`/logos/${brand.slug}.png`}
+                  alt={brand.name}
+                  width={160}
+                  height={55}
+                  className={`w-auto object-contain ${brand.customClass || "h-8"}`}
+                />
+              </div>
+            ))}
           </div>
         ))}
       </div>

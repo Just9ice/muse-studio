@@ -22,7 +22,7 @@ export function BrandMarquee() {
       aria-label="Brand partners"
     >
       <div className="flex w-max animate-marquee items-center">
-        {[...Array(4)].map((_, idx) => (
+        {[...Array(6)].map((_, idx) => (
           <div
             key={idx}
             className="flex shrink-0 items-center justify-around gap-16 px-8"

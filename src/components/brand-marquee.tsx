@@ -3,7 +3,7 @@ import Image from "next/image";
 const brands = [
   { name: "Ceramika", slug: "ceramika_logo" },
   { name: "Aparici", slug: "aparici_logo" },
-  { name: "Viccarbe", slug: "viccarbe_logo" },
+  { name: "Viccarbe", slug: "viccarbe_logo", customClass: "h-4" },
   { name: "Stone Depot by Impacto", slug: "stone_depot_logo" },
   { name: "Ascale by Tau", slug: "ascale_logo" },
   { name: "Cosentino", slug: "cosentino_logo" },
@@ -34,7 +34,7 @@ export function BrandMarquee() {
               alt={brand.name}
               width={160}
               height={55}
-              className="h-8 w-auto object-contain"
+              className={`w-auto object-contain ${brand.customClass || "h-8"}`}
             />
           </div>
         ))}

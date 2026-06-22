@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+:root {
+  /* Muse Studio brand tokens — derived from the Figma "Muse Branding" file */
+  --color-cream: #f3efe2;       /* page background */
+  --color-cream-deep: #ece5d1;  /* secondary panel background */
+  --color-ink: #1a1a18;         /* primary text / dark section background */
+  --color-ink-soft: #2a2a26;    /* dark section secondary surface */
+  --color-tan: #c9b988;         /* nav bar background */
+  --color-gold: #c5972c;        /* CTA buttons, accent */
+  --color-gold-dark: #a87f22;   /* CTA hover */
+  --color-terracotta: #b14a30;  /* sculpture-derived accent, sparing use */
+  --color-line: #d8d1bd;        /* hairline dividers on cream */
+  --color-line-dark: #3a3a35;   /* hairline dividers on ink */
+
+  --background: var(--color-cream);
+  --foreground: var(--color-ink);
+}
+
+@theme inline {
+  --color-cream: var(--color-cream);
+  --color-cream-deep: var(--color-cream-deep);
+  --color-ink: var(--color-ink);
+  --color-ink-soft: var(--color-ink-soft);
+  --color-tan: var(--color-tan);
+  --color-gold: var(--color-gold);
+  --color-gold-dark: var(--color-gold-dark);
+  --color-terracotta: var(--color-terracotta);
+  --color-line: var(--color-line);
+  --color-line-dark: var(--color-line-dark);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-serif: "Instrument Serif", Georgia, serif;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+::selection {
+  background: var(--color-gold);
+  color: var(--color-ink);
+}
+
+/* Respect reduced-motion preference globally */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Marquee keyframes for the brand carousel */
+@keyframes marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee-scroll 32s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}

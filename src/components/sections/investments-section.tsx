@@ -100,7 +100,7 @@ export function InvestmentsSection() {
                 >
                   {project.eyebrow}
                 </span>
-                <h3 className="mt-3 text-2xl font-semibold tracking-tight text-ink sm:text-3xl">
+                <h3 className="mt-3 text-6xl font-semibold tracking-tight text-ink sm:text-[60px]">
                   {project.title}
                 </h3>
                 <dl className="mt-5 max-w-xs space-y-2 border-t border-line pt-5 text-sm">

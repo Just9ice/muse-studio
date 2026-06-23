@@ -7,7 +7,7 @@ export function MaterialsSection() {
       <div className="mx-auto grid w-full max-w-[1600px] grid-cols-1 items-center gap-12 px-6 lg:grid-cols-2 lg:gap-20 lg:px-10">
         <Reveal
           from="left"
-          className="relative aspect-[3/2] w-full overflow-hidden"
+          className="relative aspect-[5/4] w-full overflow-hidden"
         >
           {/* Replace with the real showroom feature-wall photo (carved wood fins
               with words like "BELIEVE", "DESIGN", "USER EXPERIENCE" routed into them). */}

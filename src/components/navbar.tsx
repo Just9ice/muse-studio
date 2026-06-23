@@ -47,7 +47,7 @@ export function Navbar() {
 
           <Link
             href="/"
-            className="flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.15em] text-ink"
+            className="flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.15em] text-ink transition-transform duration-300 hover:rotate-12 hover:scale-110 ease-[cubic-bezier(0.175,0.885,0.32,1.275)]"
             aria-label="Muse Studio home"
           >
             <Image

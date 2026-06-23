@@ -19,7 +19,7 @@ const projects = [
     year: "2026",
     location: "Lagos, Nigeria",
     tag: "02 / LAGOS / NIGERIA",
-    image: "/images/project-saplaya.png",
+    image: "/images/saplaya.jpeg",
     alt: "Contemporary multi-storey residential building, The Saplaya Project in Lagos, Nigeria",
     align: "right" as const,
   },
@@ -42,8 +42,8 @@ export function InvestmentsSection() {
           <Reveal delay={0.1} className="flex items-end">
             <p className="text-base leading-relaxed text-ink/70">
               Muse Studio identifies and develops opportunities where
-              exceptional design, premium finishes, and strategic execution
-              come together to create long-term value.
+              exceptional design, premium finishes, and strategic execution come
+              together to create long-term value.
             </p>
           </Reveal>
         </div>
@@ -66,7 +66,7 @@ export function InvestmentsSection() {
                   sizes="(min-width: 1024px) 45vw, 90vw"
                   className="object-cover"
                 />
-                <span className="absolute left-4 top-4 text-xs uppercase tracking-wide text-cream/90">
+                <span className="absolute left-4 top-4 text-xs uppercase tracking-wide text-cream/90 bg-ink/50 p-2 rounded-full">
                   {project.tag}
                 </span>
               </div>
@@ -80,11 +80,15 @@ export function InvestmentsSection() {
                 </h3>
                 <dl className="mt-5 max-w-xs space-y-2 border-t border-line pt-5 text-sm">
                   <div className="flex justify-between">
-                    <dt className="uppercase tracking-wide text-ink/40">Year</dt>
+                    <dt className="uppercase tracking-wide text-ink/40">
+                      Year
+                    </dt>
                     <dd className="text-ink/70">{project.year}</dd>
                   </div>
                   <div className="flex justify-between">
-                    <dt className="uppercase tracking-wide text-ink/40">Location</dt>
+                    <dt className="uppercase tracking-wide text-ink/40">
+                      Location
+                    </dt>
                     <dd className="text-ink/70">{project.location}</dd>
                   </div>
                 </dl>

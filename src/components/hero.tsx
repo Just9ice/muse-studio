@@ -5,7 +5,15 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { BrandMarquee } from "@/components/brand-marquee";
 
-const headingWords = ["Your", "one", "stop", "for", "quality", "building", "finishes."];
+const headingWords = [
+  "Your",
+  "one",
+  "stop",
+  "for",
+  "quality",
+  "building",
+  "finishes.",
+];
 
 export function Hero() {
   return (
@@ -14,7 +22,7 @@ export function Hero() {
         {/* Background photo — replace /public/images/landing1.jpg with the real
             architectural photo (1920x1080 or larger) referenced in the Figma hero frame. */}
         <Image
-          src="/images/landing1.jpg"
+          src="/images/hero-image.jpeg"
           alt="Sculptural red steel architectural detail against a clear sky, representing Muse Studio's material craftsmanship"
           fill
           priority
@@ -55,7 +63,11 @@ export function Hero() {
           <motion.div
             initial={{ opacity: 0, y: 14 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.85, ease: [0.22, 1, 0.36, 1] }}
+            transition={{
+              duration: 0.6,
+              delay: 0.85,
+              ease: [0.22, 1, 0.36, 1],
+            }}
             className="mt-8"
           >
             <Button size="default">Get Started</Button>

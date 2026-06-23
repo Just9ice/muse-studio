@@ -32,7 +32,7 @@ export function Hero() {
         <div className="absolute inset-0 bg-ink/10" aria-hidden />
 
         <div className="relative z-10 mx-auto w-full max-w-[1600px] px-6 lg:px-10">
-          <h1 className="max-w-3xl text-4xl font-semibold leading-[1.05] tracking-tight text-white sm:text-5xl lg:text-6xl">
+          <h1 className="max-w-3xl text-5xl font-semibold leading-[1.05] tracking-tight text-white sm:text-[60px] lg:text-[80px]">
             {headingWords.map((word, i) => (
               <motion.span
                 key={word + i}
@@ -54,7 +54,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 14 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.7, ease: [0.22, 1, 0.36, 1] }}
-            className="mt-6 max-w-md text-base text-white sm:text-lg"
+            className="mt-6 max-w-md text-2xl text-white sm:text-2xl"
           >
             We source premium materials, provide expert guidance, and deliver
             professional installation for a seamless experience.

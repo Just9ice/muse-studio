@@ -27,7 +27,7 @@ export function Hero() {
           fill
           priority
           sizes="100vw"
-          className="object-cover bg-gradient-to-b from-black/90 via-black/50 to-pink-300"
+          className="object-cover bg-gradient-to-b from-black/90 via-black/70 to-white/30"
         />
         <div className="absolute inset-0 bg-ink/10" aria-hidden />
 

@@ -33,7 +33,7 @@ export function InvestmentsSection() {
       <div className="mx-auto w-full max-w-[1600px] px-6 lg:px-10">
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 lg:gap-20">
           <Reveal>
-            <h2 className="text-3xl font-semibold leading-tight tracking-tight text-ink sm:text-4xl">
+            <h2 className="text-4xl font-semibold leading-tight tracking-tight text-ink sm:text-5xl lg:text-[60px]">
               Invest in Spaces
               <br />
               That Create Lasting
@@ -42,7 +42,7 @@ export function InvestmentsSection() {
             </h2>
           </Reveal>
           <Reveal delay={0.1} className="flex items-end">
-            <p className="text-base leading-relaxed text-ink/70">
+            <p className="text-2xl leading-relaxed text-ink/70">
               Muse Studio identifies and develops opportunities where
               exceptional design, premium finishes, and strategic execution come
               together to create long-term value.
@@ -61,7 +61,10 @@ export function InvestmentsSection() {
               }`}
             >
               {/* Scroll anchor placed here for precise targeting */}
-              <div id={project.id} className="relative aspect-[3/2] w-full overflow-hidden group">
+              <div
+                id={project.id}
+                className="relative aspect-[3/2] w-full overflow-hidden group"
+              >
                 <Image
                   src={project.image}
                   alt={project.alt}
@@ -71,13 +74,17 @@ export function InvestmentsSection() {
                 />
                 {/* Hover overlay */}
                 <div className="absolute inset-0 bg-ink/0 group-hover:bg-ink/30 transition-colors duration-500 ease-in-out" />
-                <span className="absolute left-4 top-4 text-xs uppercase tracking-wide text-cream/90 bg-ink/50 p-2 rounded-full">
+                <span className="absolute left-4 top-4 text-xs uppercase tracking-wide text-cream/90 bg-ink/10 backdrop-blur-md border border-white/5 shadow-lg p-2">
                   {project.tag}
                 </span>
                 {/* Caption that fades in on hover */}
                 <div className="absolute inset-x-0 bottom-0 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out bg-gradient-to-t from-ink/80 to-transparent p-5">
-                  <p className="text-sm text-cream/90 font-medium">{project.title}</p>
-                  <p className="text-xs text-cream/60 mt-1">{project.location}</p>
+                  <p className="text-sm text-cream/90 font-medium">
+                    {project.title}
+                  </p>
+                  <p className="text-xs text-cream/60 mt-1">
+                    {project.location}
+                  </p>
                 </div>
               </div>
 
@@ -85,7 +92,11 @@ export function InvestmentsSection() {
                 {/* "Private Residence" in Times New Roman italic as specified */}
                 <span
                   className="text-xs uppercase tracking-wide text-ink/50"
-                  style={{ fontFamily: '"Times New Roman", Times, serif', fontStyle: 'italic', letterSpacing: '0.05em' }}
+                  style={{
+                    fontFamily: '"Times New Roman", Times, serif',
+                    fontStyle: "italic",
+                    letterSpacing: "0.05em",
+                  }}
                 >
                   {project.eyebrow}
                 </span>

@@ -6,7 +6,9 @@ import { Button } from "@/components/ui/button";
 
 export function NewsletterSection() {
   const [email, setEmail] = useState("");
-  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+  const [status, setStatus] = useState<
+    "idle" | "loading" | "success" | "error"
+  >("idle");
   const [message, setMessage] = useState("");
 
   async function handleSubmit(e: React.FormEvent) {
@@ -45,7 +47,7 @@ export function NewsletterSection() {
       <div className="mx-auto max-w-[1600px] px-6 lg:px-10">
         <div className="grid grid-cols-1 items-start gap-8 lg:grid-cols-2 lg:items-center">
           <Reveal>
-            <h2 className="text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
+            <h2 className="text-6xl font-semibold tracking-tight text-ink sm:text-[60px]">
               Join our community
             </h2>
             <p className="mt-3 max-w-sm text-sm text-ink/60">
@@ -55,7 +57,10 @@ export function NewsletterSection() {
           </Reveal>
 
           <Reveal delay={0.1} from="right">
-            <form onSubmit={handleSubmit} className="border-b border-ink/30 pb-2 relative">
+            <form
+              onSubmit={handleSubmit}
+              className="border-b border-ink/30 pb-2 relative"
+            >
               <div className="flex items-center gap-4">
                 <label htmlFor="newsletter-email" className="sr-only">
                   Email address
@@ -70,14 +75,18 @@ export function NewsletterSection() {
                   onChange={(e) => setEmail(e.target.value)}
                   className="w-full bg-transparent text-sm text-ink placeholder:text-ink/40 focus:outline-none disabled:opacity-50"
                 />
-                <Button 
-                  type="submit" 
-                  variant="ghost" 
-                  size="link" 
+                <Button
+                  type="submit"
+                  variant="ghost"
+                  size="link"
                   className="shrink-0 disabled:opacity-50"
                   disabled={status === "loading" || status === "success"}
                 >
-                  {status === "loading" ? "Subscribing..." : status === "success" ? "Subscribed" : "Subscribe"}
+                  {status === "loading"
+                    ? "Subscribing..."
+                    : status === "success"
+                      ? "Subscribed"
+                      : "Subscribe"}
                 </Button>
               </div>
             </form>
@@ -86,7 +95,9 @@ export function NewsletterSection() {
                 No spam. Unsubscribe in one click.
               </p>
               {message && (
-                <p className={`text-xs ${status === "error" ? "text-red-500" : "text-green-600"}`}>
+                <p
+                  className={`text-xs ${status === "error" ? "text-red-500" : "text-green-600"}`}
+                >
                   {message}
                 </p>
               )}

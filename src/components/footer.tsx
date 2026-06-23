@@ -22,7 +22,7 @@ export function Footer() {
     <footer className="w-full bg-ink py-20 text-cream">
       <div className="mx-auto max-w-[1600px] px-6 lg:px-10">
         <Reveal>
-          <h2 className="max-w-2xl text-4xl font-semibold leading-tight tracking-tight sm:text-5xl">
+          <h2 className="max-w-2xl text-3xl font-semibold leading-tight tracking-tight sm:text-4xl">
             Let&apos;s build something
             <br />
             that outlasts us.

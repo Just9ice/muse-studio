@@ -32,7 +32,7 @@ export function Hero() {
         <div className="absolute inset-0 bg-ink/10" aria-hidden />
 
         <div className="relative z-10 mx-auto w-full max-w-[1600px] px-6 lg:px-10">
-          <h1 className="max-w-3xl text-5xl font-semibold leading-[1.05] tracking-tight text-cream sm:text-6xl lg:text-7xl">
+          <h1 className="max-w-3xl text-4xl font-semibold leading-[1.05] tracking-tight text-cream sm:text-5xl lg:text-6xl">
             {headingWords.map((word, i) => (
               <motion.span
                 key={word + i}

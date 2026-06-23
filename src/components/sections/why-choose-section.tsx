@@ -28,7 +28,7 @@ export function WhyChooseSection() {
     <section className="flex min-h-screen w-full items-center bg-ink py-24">
       <div className="mx-auto w-full max-w-[1600px] px-6 lg:px-10">
         <Reveal>
-          <h2 className="text-4xl font-semibold tracking-tight text-cream sm:text-5xl">
+          <h2 className="text-3xl font-semibold tracking-tight text-cream sm:text-4xl">
             Why clients choose Muse Studio
           </h2>
         </Reveal>

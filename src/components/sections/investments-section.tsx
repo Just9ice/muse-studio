@@ -4,6 +4,7 @@ import { Reveal } from "@/components/reveal";
 
 const projects = [
   {
+    id: "albalat",
     eyebrow: "PRIVATE RESIDENCE",
     title: "The Albalat Estate",
     year: "2026",
@@ -14,6 +15,7 @@ const projects = [
     align: "left" as const,
   },
   {
+    id: "saplaya",
     eyebrow: "PRIVATE RESIDENCE",
     title: "The Saplaya Project",
     year: "2026",
@@ -31,7 +33,7 @@ export function InvestmentsSection() {
       <div className="mx-auto w-full max-w-[1600px] px-6 lg:px-10">
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 lg:gap-20">
           <Reveal>
-            <h2 className="text-4xl font-semibold leading-tight tracking-tight text-ink sm:text-5xl">
+            <h2 className="text-3xl font-semibold leading-tight tracking-tight text-ink sm:text-4xl">
               Invest in Spaces
               <br />
               That Create Lasting
@@ -58,24 +60,36 @@ export function InvestmentsSection() {
                 project.align === "right" ? "lg:[&>*:first-child]:order-2" : ""
               }`}
             >
-              <div className="relative aspect-[4/3] w-full overflow-hidden">
+              {/* Scroll anchor placed here for precise targeting */}
+              <div id={project.id} className="relative aspect-[3/2] w-full overflow-hidden group">
                 <Image
                   src={project.image}
                   alt={project.alt}
                   fill
                   sizes="(min-width: 1024px) 45vw, 90vw"
-                  className="object-cover"
+                  className="object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
                 />
+                {/* Hover overlay */}
+                <div className="absolute inset-0 bg-ink/0 group-hover:bg-ink/30 transition-colors duration-500 ease-in-out" />
                 <span className="absolute left-4 top-4 text-xs uppercase tracking-wide text-cream/90 bg-ink/50 p-2 rounded-full">
                   {project.tag}
                 </span>
+                {/* Caption that fades in on hover */}
+                <div className="absolute inset-x-0 bottom-0 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out bg-gradient-to-t from-ink/80 to-transparent p-5">
+                  <p className="text-sm text-cream/90 font-medium">{project.title}</p>
+                  <p className="text-xs text-cream/60 mt-1">{project.location}</p>
+                </div>
               </div>
 
               <div>
-                <span className="text-xs uppercase tracking-wide text-ink/50">
+                {/* "Private Residence" in Times New Roman italic as specified */}
+                <span
+                  className="text-xs uppercase tracking-wide text-ink/50"
+                  style={{ fontFamily: '"Times New Roman", Times, serif', fontStyle: 'italic', letterSpacing: '0.05em' }}
+                >
                   {project.eyebrow}
                 </span>
-                <h3 className="mt-3 text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
+                <h3 className="mt-3 text-2xl font-semibold tracking-tight text-ink sm:text-3xl">
                   {project.title}
                 </h3>
                 <dl className="mt-5 max-w-xs space-y-2 border-t border-line pt-5 text-sm">

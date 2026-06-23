@@ -7,15 +7,15 @@ import Image from "next/image";
 import { Menu, X } from "lucide-react";
 
 const locations = [
-  { label: "lagos", href: "/lagos" },
-  { label: "valencia", href: "/valencia" },
+  { label: "lagos", href: "/#saplaya" },
+  { label: "valencia", href: "/#albalat" },
 ];
 
 const navLinks = [
   { label: "home", href: "/" },
-  { label: "about us", href: "/about" },
-  { label: "investments", href: "/investments" },
-  { label: "contact", href: "/contact" },
+  { label: "about us", href: "/#about" },
+  { label: "investments", href: "/#investments" },
+  { label: "contact", href: "/#contact" },
 ];
 
 export function Navbar() {
@@ -32,7 +32,7 @@ export function Navbar() {
         className="sticky top-0 z-40 w-full border-b border-ink/10 bg-tan"
       >
         <nav className="mx-auto flex h-16 max-w-[1600px] items-center justify-between px-6 lg:px-10">
-          <ul className="hidden items-center gap-6 text-base uppercase tracking-wide text-ink/80 sm:flex">
+          <ul className="hidden items-center gap-6 text-base uppercase text-ink/80 sm:flex" style={{ fontFamily: '"Inter", system-ui, sans-serif', letterSpacing: '-0.04em' }}>
             {locations.map((l) => (
               <li key={l.label}>
                 <Link
@@ -53,12 +53,12 @@ export function Navbar() {
             <Image
               src="/logos/muse_logo.png"
               alt="Muse Logo"
-              width={100}
-              height={60}
+              width={90}
+              height={52}
             />
           </Link>
 
-          <ul className="hidden items-center gap-7 text-base uppercase tracking-wide text-ink/80 sm:flex">
+          <ul className="hidden items-center gap-7 text-base uppercase text-ink/80 sm:flex" style={{ fontFamily: '"Inter", system-ui, sans-serif', letterSpacing: '-0.04em' }}>
             {navLinks.map((l) => (
               <li key={l.label}>
                 <Link

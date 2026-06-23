@@ -16,10 +16,16 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
-        <MaterialsSection />
+        <div id="about">
+          <MaterialsSection />
+        </div>
         <WhyChooseSection />
-        <InvestmentsSection />
-        <ForArchitectsSection />
+        <div id="investments">
+          <InvestmentsSection />
+        </div>
+        <div id="contact">
+          <ForArchitectsSection />
+        </div>
         <NewsletterSection />
       </main>
       <Footer />

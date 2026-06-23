@@ -41,7 +41,24 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-times);
+  font-family: "Inter", system-ui, sans-serif;
+  letter-spacing: -0.04em;
+}
+
+/* All italic / em text renders in Times New Roman */
+em,
+i,
+.font-italic {
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  letter-spacing: 0; /* reset kerning for serif */
+}
+
+/* Bold non-italic text stays Inter with -4 kerning */
+strong,
+b {
+  font-family: "Inter", system-ui, sans-serif;
+  letter-spacing: -0.04em;
 }
 
 ::selection {

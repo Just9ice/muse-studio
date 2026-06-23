@@ -7,7 +7,7 @@ export function ForArchitectsSection() {
     <section className="flex min-h-screen w-full items-center bg-cream-deep py-24">
       <div className="mx-auto grid w-full max-w-[1600px] grid-cols-1 items-center gap-12 px-6 lg:grid-cols-2 lg:gap-20 lg:px-10">
         <Reveal from="left" className="max-w-lg">
-          <h2 className="text-4xl font-semibold leading-tight tracking-tight text-ink sm:text-5xl">
+          <h2 className="text-3xl font-semibold leading-tight tracking-tight text-ink sm:text-4xl">
             For architects, <em className="font-serif font-normal italic">designers</em>{" "}
             and developers.
           </h2>
@@ -21,7 +21,7 @@ export function ForArchitectsSection() {
           </p>
         </Reveal>
 
-        <Reveal from="right" delay={0.1} className="relative aspect-[6/5] w-full overflow-hidden">
+        <Reveal from="right" delay={0.1} className="relative aspect-[4/3] w-full overflow-hidden">
           {/* Replace with the real showroom interior photo at 2 Bash Drive. */}
           <Image
             src="/images/showroom.jpg"

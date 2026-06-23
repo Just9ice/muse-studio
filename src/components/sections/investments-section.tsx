@@ -63,7 +63,7 @@ export function InvestmentsSection() {
               {/* Scroll anchor placed here for precise targeting */}
               <div
                 id={project.id}
-                className="relative aspect-[3/2] w-full overflow-hidden group"
+                className="relative aspect-[4/4] w-full overflow-hidden group"
               >
                 <Image
                   src={project.image}

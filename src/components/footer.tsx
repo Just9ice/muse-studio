@@ -38,7 +38,7 @@ export function Footer() {
           </a>
 
           <a
-            href="https://instagram.com/musestudiong"
+            href="https://www.instagram.com/musestudiong?igsh=MXh2c3BoZ2p3anAzZg=="
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-sm text-cream/80 transition-colors hover:text-gold"

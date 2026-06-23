@@ -32,12 +32,18 @@ export function Navbar() {
         className="sticky top-0 z-40 w-full border-b border-ink/10 bg-tan"
       >
         <nav className="mx-auto flex h-16 max-w-[1600px] items-center justify-between px-6 lg:px-10">
-          <ul className="hidden items-center gap-6 text-base uppercase text-ink/80 sm:flex" style={{ fontFamily: '"Inter", system-ui, sans-serif', letterSpacing: '-0.04em' }}>
+          <ul
+            className="hidden items-center gap-6 text-base uppercase text-ink/80 sm:flex"
+            style={{
+              fontFamily: '"Inter", system-ui, sans-serif',
+              letterSpacing: "-0.04em",
+            }}
+          >
             {locations.map((l) => (
               <li key={l.label}>
                 <Link
                   href={l.href}
-                  className="transition-colors hover:text-ink/50"
+                  className="transition-colors hover:text-white"
                 >
                   {l.label}
                 </Link>
@@ -58,12 +64,18 @@ export function Navbar() {
             />
           </Link>
 
-          <ul className="hidden items-center gap-7 text-base uppercase text-ink/80 sm:flex" style={{ fontFamily: '"Inter", system-ui, sans-serif', letterSpacing: '-0.04em' }}>
+          <ul
+            className="hidden items-center gap-7 text-base uppercase text-ink/80 sm:flex"
+            style={{
+              fontFamily: '"Inter", system-ui, sans-serif',
+              letterSpacing: "-0.04em",
+            }}
+          >
             {navLinks.map((l) => (
               <li key={l.label}>
                 <Link
                   href={l.href}
-                  className="transition-colors hover:text-ink/50"
+                  className="transition-colors hover:text-white"
                 >
                   {l.label}
                 </Link>

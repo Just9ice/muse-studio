@@ -32,10 +32,13 @@ export function Navbar() {
         className="sticky top-0 z-40 w-full border-b border-ink/10 bg-tan"
       >
         <nav className="mx-auto flex h-16 max-w-[1600px] items-center justify-between px-6 lg:px-10">
-          <ul className="hidden items-center gap-6 text-xs uppercase tracking-wide text-ink/80 sm:flex">
+          <ul className="hidden items-center gap-6 text-base uppercase tracking-wide text-ink/80 sm:flex">
             {locations.map((l) => (
               <li key={l.label}>
-                <Link href={l.href} className="transition-colors hover:text-ink">
+                <Link
+                  href={l.href}
+                  className="transition-colors hover:text-ink/50"
+                >
                   {l.label}
                 </Link>
               </li>
@@ -47,7 +50,7 @@ export function Navbar() {
             className="flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.15em] text-ink"
             aria-label="Muse Studio home"
           >
-            <Image 
+            <Image
               src="/logos/muse_logo.png"
               alt="Muse Logo"
               width={100}
@@ -55,10 +58,13 @@ export function Navbar() {
             />
           </Link>
 
-          <ul className="hidden items-center gap-7 text-xs uppercase tracking-wide text-ink/80 sm:flex">
+          <ul className="hidden items-center gap-7 text-base uppercase tracking-wide text-ink/80 sm:flex">
             {navLinks.map((l) => (
               <li key={l.label}>
-                <Link href={l.href} className="transition-colors hover:text-ink">
+                <Link
+                  href={l.href}
+                  className="transition-colors hover:text-ink/50"
+                >
                   {l.label}
                 </Link>
               </li>
@@ -86,7 +92,7 @@ export function Navbar() {
           >
             <div className="flex h-16 items-center justify-between px-6 border-b border-line-dark">
               <Link href="/" onClick={closeMenu} className="flex items-center">
-                <Image 
+                <Image
                   src="/logos/muse_logo.png"
                   alt="Muse Logo"
                   width={100}
@@ -102,24 +108,25 @@ export function Navbar() {
                 <X size={24} />
               </button>
             </div>
-            
+
             <div className="flex flex-col items-center justify-center flex-1 gap-8 p-6 bg-gradient-to-b from-ink to-ink-soft">
               {navLinks.map((l) => (
-                <Link 
-                  key={l.label} 
-                  href={l.href} 
-                  onClick={closeMenu} 
+                <Link
+                  key={l.label}
+                  href={l.href}
+                  onClick={closeMenu}
                   className="text-3xl font-serif tracking-widest uppercase transition-colors hover:text-gold"
+                  style={{ fontFamily: "var(--font-inter)" }}
                 >
                   {l.label}
                 </Link>
               ))}
               <div className="h-px w-24 bg-line-dark my-4" />
               {locations.map((l) => (
-                <Link 
-                  key={l.label} 
-                  href={l.href} 
-                  onClick={closeMenu} 
+                <Link
+                  key={l.label}
+                  href={l.href}
+                  onClick={closeMenu}
                   className="text-sm tracking-widest uppercase text-cream/70 transition-colors hover:text-cream"
                 >
                   {l.label}

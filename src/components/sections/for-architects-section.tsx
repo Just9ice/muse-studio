@@ -25,7 +25,7 @@ export function ForArchitectsSection() {
         <Reveal
           from="right"
           delay={0.1}
-          className="relative aspect-[4/3] w-full overflow-hidden"
+          className="relative aspect-[5/5] w-full overflow-hidden"
         >
           {/* Replace with the real showroom interior photo at 2 Bash Drive. */}
           <Image

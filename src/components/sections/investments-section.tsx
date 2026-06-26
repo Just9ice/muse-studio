@@ -33,7 +33,7 @@ export function InvestmentsSection() {
       <div className="mx-auto w-full max-w-[1600px] px-6 lg:px-10">
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 lg:gap-20">
           <Reveal>
-            <h2 className="text-4xl font-semibold leading-tight tracking-tight text-ink sm:text-5xl lg:text-[60px]">
+            <h2 className="text-4xl font-semibold leading-tight tracking-tight text-ink sm:text-5xl lg:text-5xl">
               Invest in Spaces
               <br />
               That Create Lasting
@@ -42,7 +42,7 @@ export function InvestmentsSection() {
             </h2>
           </Reveal>
           <Reveal delay={0.1} className="flex items-end">
-            <p className="text-2xl leading-relaxed text-ink/70">
+            <p className="text-xl leading-relaxed text-ink/70">
               Muse Studio identifies and develops opportunities where
               exceptional design, premium finishes, and strategic execution come
               together to create long-term value.
@@ -100,7 +100,7 @@ export function InvestmentsSection() {
                 >
                   {project.eyebrow}
                 </span>
-                <h3 className="mt-3 text-6xl font-semibold tracking-tight text-ink sm:text-[60px]">
+                <h3 className="mt-3 text-5xl font-semibold tracking-tight text-ink sm:text-5xl lg:text-5xl">
                   {project.title}
                 </h3>
                 <dl className="mt-5 max-w-xs space-y-2 border-t border-line pt-5 text-sm">

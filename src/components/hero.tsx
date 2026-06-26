@@ -22,12 +22,12 @@ export function Hero() {
         {/* Background photo — replace /public/images/landing1.jpg with the real
             architectural photo (1920x1080 or larger) referenced in the Figma hero frame. */}
         <Image
-          src="/images/hero-image.jpeg"
+          src="/images/hero-image.png"
           alt="Sculptural red steel architectural detail against a clear sky, representing Muse Studio's material craftsmanship"
           fill
           priority
           sizes="100vw"
-          className="object-cover bg-gradient-to-b from-black/90 via-black/70 to-white/30"
+          className="object-cover bg-gradient-to-b from-black/90 via-black/80 to-black/50"
         />
         <div className="absolute inset-0 bg-ink/10" aria-hidden />
 

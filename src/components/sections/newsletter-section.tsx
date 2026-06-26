@@ -45,7 +45,7 @@ export function NewsletterSection() {
   return (
     <section className="w-full border-t border-line bg-cream py-20">
       <div className="mx-auto max-w-[1600px] px-6 lg:px-10">
-        <div className="grid grid-cols-1 items-start gap-8 lg:grid-cols-2 lg:items-center">
+        <div className="grid grid-cols-1 items-start gap-8 lg:grid-cols-2 lg:items-center border-b border-line pb-20">
           <Reveal>
             <h2 className="text-6xl font-semibold tracking-tight text-ink sm:text-[60px]">
               Join our community

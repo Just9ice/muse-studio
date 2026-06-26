@@ -5,6 +5,7 @@ import { WhyChooseSection } from "@/components/sections/why-choose-section";
 import { InvestmentsSection } from "@/components/sections/investments-section";
 import { ForArchitectsSection } from "@/components/sections/for-architects-section";
 import { NewsletterSection } from "@/components/sections/newsletter-section";
+import { ContactSection } from "@/components/sections/contact-section";
 import { Footer } from "@/components/footer";
 
 // Plain document flow, smoothed by Lenis (see smooth-scroll-provider.tsx).
@@ -27,6 +28,7 @@ export default function Home() {
           <ForArchitectsSection />
         </div>
         <NewsletterSection />
+        <ContactSection />
       </main>
       <Footer />
     </>

@@ -3,23 +3,23 @@ import { RevealGroup, Reveal } from "@/components/reveal";
 const pillars = [
   {
     number: "1",
-    title: "Access",
-    body: "Gain access to carefully curated finishes from renowned European brands, with the flexibility to customize specifications, colors, sizes, and designs to suit your project's vision.",
+    title: "Design Consultancy",
+    body: "We work with you to understand your vision and select the right materials before anything's ordered.",
   },
   {
     number: "2",
-    title: "Experience",
-    body: "Explore materials in carefully curated, real-world settings within our showroom, allowing you to make decisions with confidence before committing.",
+    title: "Order Procurement",
+    body: "We source directly from top European supliers and handle all freight, customs, and logistics.",
   },
   {
     number: "3",
-    title: "Expertise",
-    body: "Receive guidance from experienced professionals who support every stage of your project, from material selection and technical specifications to implementation.",
+    title: "Delivery to Site",
+    body: "Materials are coordinated and delivered around your build timeline.",
   },
   {
     number: "4",
-    title: "Execution",
-    body: "From sourcing and logistics to installation and final delivery, we coordinate every detail to ensure a seamless and exceptional result.",
+    title: "Onsite Installation",
+    body: "Our technical team installs everything, ensuring the results match the design's intent.",
   },
 ];
 
@@ -40,11 +40,11 @@ export function WhyChooseSection() {
               delay={i * 0.08}
               className="border-l border-line-dark pt-8 pl-6 first:border-l-0 first:pl-0 lg:pl-8"
             >
-              <span className="text-sm text-cream/40">{pillar.number}</span>
+              <span className="text-sm text-cream/70">{pillar.number}</span>
               <h3 className="mt-6 text-xl font-medium text-cream">
                 {pillar.title}
               </h3>
-              <p className="mt-3 max-w-xs text-sm leading-relaxed text-cream/55">
+              <p className="mt-3 max-w-xs text-sm leading-relaxed text-cream/70">
                 {pillar.body}
               </p>
             </Reveal>

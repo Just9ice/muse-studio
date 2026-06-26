@@ -12,7 +12,7 @@ export function MaterialsSection() {
           {/* Replace with the real showroom feature-wall photo (carved wood fins
               with words like "BELIEVE", "DESIGN", "USER EXPERIENCE" routed into them). */}
           <Image
-            src="/images/materials-wall.png"
+            src="/images/impacto-building.png"
             alt="Muse Studio showroom feature wall made of carved wood fins"
             fill
             sizes="(min-width: 1024px) 45vw, 90vw"
@@ -21,19 +21,27 @@ export function MaterialsSection() {
         </Reveal>
 
         <Reveal from="right" delay={0.1} className="max-w-3xl">
-          <h2 className="text-4xl font-semibold leading-tight tracking-tight text-ink sm:text-5xl lg:text-[60px]">
-            Materials <em className="font-serif font-normal italic">define</em>
+          <h2 className="text-4xl font-semibold leading-tight tracking-tight text-ink sm:text-5xl lg:text-5xl">
+            Built on <em className="font-serif font-normal italic">30 Years</em>
             <br />
-            the outcome
+            of Expertise
           </h2>
-          <p className="mt-6 text-2xl leading-relaxed text-ink/70">
-            We are a subsidiary of Impacto Grupo Spain, our parent company that
-            has been active in Nigeria since 2000.
+          <p className="mt-6 text-xl leading-relaxed text-ink/70">
+            Muse Studio is the end-to-end finishing partner for architects,
+            interior designers, and developers building quality spaces in
+            Nigeria.
           </p>
-          <p className="mt-4 text-2xl leading-relaxed text-ink/70">
-            We&apos;ve seen the gap in the market, and we&apos;re bringing
-            together global expertise to give you better options, better
-            service, and better results.
+          <p className="mt-4 text-xl leading-relaxed text-ink/70">
+            We are part of Impacto Grupo; a Spanish-Nigerian group with 30 years
+            of experience in the Nigerian construction and finishing market,
+            which gives us direct access to premium European tiles and
+            finishings, in-housed stone fabrication, and a technical team
+            capable of taking a project from specification through to
+            installation.
+          </p>
+          <p className="mt-4 text-xl leading-relaxed text-ink/70">
+            One point of contact. No gap between design intent and finished
+            space.
           </p>
         </Reveal>
       </div>

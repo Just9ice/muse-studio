@@ -32,25 +32,6 @@ export function Navbar() {
         className="sticky top-0 z-40 w-full border-b border-ink/10 bg-tan"
       >
         <nav className="mx-auto flex h-16 max-w-[1600px] items-center justify-between px-6 lg:px-10">
-          <ul
-            className="hidden items-center gap-6 text-base uppercase text-ink/80 sm:flex"
-            style={{
-              fontFamily: '"Inter", system-ui, sans-serif',
-              letterSpacing: "-0.04em",
-            }}
-          >
-            {locations.map((l) => (
-              <li key={l.label}>
-                <Link
-                  href={l.href}
-                  className="transition-colors hover:text-white"
-                >
-                  {l.label}
-                </Link>
-              </li>
-            ))}
-          </ul>
-
           <Link
             href="/"
             className="flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.15em] text-ink transition-transform duration-300 hover:rotate-12 hover:scale-110 ease-[cubic-bezier(0.175,0.885,0.32,1.275)] hover:shadow-xs"

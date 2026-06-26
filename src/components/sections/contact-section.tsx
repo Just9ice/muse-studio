@@ -1,7 +1,6 @@
 "use client";
 
 import { Reveal } from "@/components/reveal";
-import { Button } from "@/components/ui/button";
 
 export function ContactSection() {
   return (

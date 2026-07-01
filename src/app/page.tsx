@@ -4,7 +4,7 @@ import { MaterialsSection } from "@/components/sections/materials-section";
 import { WhyChooseSection } from "@/components/sections/why-choose-section";
 import { InvestmentsSection } from "@/components/sections/investments-section";
 import { ForArchitectsSection } from "@/components/sections/for-architects-section";
-import { NewsletterSection } from "@/components/sections/newsletter-section";
+
 import { ContactSection } from "@/components/sections/contact-section";
 import { Footer } from "@/components/footer";
 
@@ -27,7 +27,7 @@ export default function Home() {
         <div id="contact">
           <ForArchitectsSection />
         </div>
-        <NewsletterSection />
+        {/* <NewsletterSection /> */}
         <ContactSection />
       </main>
       <Footer />

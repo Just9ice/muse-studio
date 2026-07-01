@@ -26,12 +26,12 @@ export function MaterialsSection() {
             <br />
             of Expertise
           </h2>
-          <p className="mt-6 text-xl leading-relaxed text-ink/70">
+          <p className="mt-6 text-base justify-center leading-relaxed text-ink/70">
             Muse Studio is the end-to-end finishing partner for architects,
             interior designers, and developers building quality spaces in
             Nigeria.
           </p>
-          <p className="mt-4 text-xl leading-relaxed text-ink/70">
+          <p className="mt-4 text-base justify-center leading-relaxed text-ink/70">
             We are part of Impacto Grupo; a Spanish-Nigerian group with 30 years
             of experience in the Nigerian construction and finishing market,
             which gives us direct access to premium European tiles and
@@ -39,7 +39,7 @@ export function MaterialsSection() {
             capable of taking a project from specification through to
             installation.
           </p>
-          <p className="mt-4 text-xl leading-relaxed text-ink/70">
+          <p className="mt-4 text-base justify-center leading-relaxed text-ink/70">
             One point of contact. No gap between design intent and finished
             space.
           </p>

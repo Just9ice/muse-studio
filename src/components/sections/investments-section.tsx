@@ -41,8 +41,8 @@ export function InvestmentsSection() {
               Value
             </h2>
           </Reveal>
-          <Reveal delay={0.1} className="flex items-end">
-            <p className="text-xl leading-relaxed text-ink/70">
+          <Reveal delay={0.1} className="flex items-center">
+            <p className="text-base justify-center max-w-xl leading-relaxed text-ink/70">
               Muse Studio identifies and develops opportunities where
               exceptional design, premium finishes, and strategic execution come
               together to create long-term value.

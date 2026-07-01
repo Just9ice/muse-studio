@@ -1,6 +1,7 @@
 "use client";
 
 import { Reveal } from "@/components/reveal";
+import { ArrowRight } from "lucide-react";
 
 export function ContactSection() {
   return (
@@ -11,11 +12,12 @@ export function ContactSection() {
           <div className="flex flex-col justify-center">
             <Reveal>
               <h2 className="text-6xl font-semibold tracking-tight text-ink sm:text-[60px]">
-                Send a message
+                Make an enquiry
               </h2>
-              <p className="mt-4 max-w-sm text-sm text-ink/70">
-                Be the first to access exclusive events, curated resources, and
-                professional opportunities.
+              <p className="mt-4 max-w-lg text-sm text-ink/70 flex items-end gap-4">
+                To work with us on a project and more details on The Albalat
+                Estate and Saplaya Projects, please fill the form by the side.
+                <ArrowRight className="w-8 h-8" />
               </p>
             </Reveal>
           </div>

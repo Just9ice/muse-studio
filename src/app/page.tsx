@@ -24,11 +24,13 @@ export default function Home() {
         <div id="investments">
           <InvestmentsSection />
         </div>
-        <div id="contact">
+        <div id="architects">
           <ForArchitectsSection />
         </div>
         {/* <NewsletterSection /> */}
-        <ContactSection />
+        <div id="contact">
+          <ContactSection />
+        </div>
       </main>
       <Footer />
     </>

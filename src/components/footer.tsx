@@ -31,10 +31,10 @@ export function Footer() {
 
         <div className="mt-10 flex flex-col gap-6 border-t border-line-dark pt-8 sm:flex-row sm:items-center sm:justify-between">
           <a
-            href="mailto:musestudio@impacto.es"
+            href="mailto:musestudio@impactogrupo.com"
             className="text-sm text-cream/80 transition-colors hover:text-gold"
           >
-            musestudio@impacto.es
+            musestudio@impactogrupo.com
           </a>
 
           <a

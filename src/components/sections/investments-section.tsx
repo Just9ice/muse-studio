@@ -13,6 +13,7 @@ const projects = [
     image: "/images/project-albalat.png",
     alt: "Modern minimalist residence with cantilevered upper floor, The Albalat Estate in Valencia, Spain",
     align: "left" as const,
+    prospectus: "/prospectus/The Albalat Estate.pdf", // Expected filename
   },
   {
     id: "saplaya",
@@ -24,6 +25,7 @@ const projects = [
     image: "/images/saplaya.jpeg",
     alt: "Contemporary multi-storey residential building, The Saplaya Project in Lagos, Nigeria",
     align: "right" as const,
+    prospectus: "/prospectus/Saplaya Residency.pdf",
   },
 ];
 
@@ -117,10 +119,14 @@ export function InvestmentsSection() {
                     <dd className="text-ink/70">{project.location}</dd>
                   </div>
                 </dl>
-                <button className="mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-ink transition-colors hover:text-gold">
-                  Download Brief
+                <a
+                  href={project.prospectus}
+                  download
+                  className="mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-ink transition-colors hover:text-gold"
+                >
+                  Download Prospectus
                   <ArrowUpRight className="h-4 w-4" />
-                </button>
+                </a>
               </div>
             </Reveal>
           ))}

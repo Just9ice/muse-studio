@@ -4,6 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { BrandMarquee } from "@/components/brand-marquee";
+import Link from "next/link";
 
 const headingWords = [
   "Your",
@@ -70,8 +71,12 @@ export function Hero() {
             }}
             className="mt-8"
           >
-            <Button size="default" className="text-white">
-              Get Started
+            <Button
+              asChild
+              size="default"
+              className="text-white"
+            >
+              <Link href="#contact">Get Started</Link>
             </Button>
           </motion.div>
         </div>
